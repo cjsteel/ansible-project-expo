@@ -1,0 +1,27 @@
+site_name: Ansible Expo
+site_author: Christopher Steel
+nav:
+    - Home: index.md
+    - About: about.md
+    - Guide: guide/index.md
+theme:
+  name: material
+  language: en
+  features:
+    - tabs
+  palette:
+    primary: indigo
+    accent: deep purple
+  font:
+    text: Roboto
+    code: Roboto Mono
+plugins:
+  - search # necessary for search to work
+  - minify:
+      minify_html: true
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
