@@ -1,13 +1,12 @@
-# Welcome to MkDocs
+# Welcome Ansible Expo
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `./base.yml -l workstation-003 -e python-interpreter=/usr/bin/python2 - Apply the base configuration to a workstation
+* `./update -l workstations -e reboot=yes - Update all workstation and reboot them
+* `./shutdown -l workstations` -Shutdown all workstaions
+* `./wakeonlan -l workstations` - Power on all workstations
 
 ## Project layout
 
@@ -15,3 +14,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+```shell
+this is a shell
+```
+
+## Another heading

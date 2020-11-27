@@ -2,8 +2,31 @@ site_name: Ansible Expo
 site_author: Christopher Steel
 nav:
     - Home: index.md
-    - About: about.md
-    - Guide: guide/index.md
+    - Setup:
+       - Controller: 
+         - venv: venv/installing-ansible-into-a-virtual-python-3-environment.md
+         - sshkeys : sshkeys
+    - Usage:
+       - Maintenance Commnads: maintenance-command-examples.md
+       - Adding New Systems:
+           - System preparations: 
+               - BIOS/(U)EFI Settings:
+                   - Wake-on-LAN (Wol): bios/enabling-wol.md
+                   - Network booting: bios/enabling-pxe.md
+               - Hardware:
+                   - Mirrored boot: mdadm/index.md
+                   - Drive locations: chassis/index.md
+               - DNS:
+                   - DNS: dns/index.md
+                   - /etc/hosts file: etc_hosts/index.md
+           - Connectivity:
+               - Connectivity test: ssh/testing-connectivity.md
+               - ssh agent: ssh/sshagent.md
+               - ssh-add: ssh/sshadd.md 
+           - inventory/production/hosts:
+               - Research Workstation example: inventory/workstation-example.md 
+               - Storage Server example: inventory/server-example.yml
+
 theme:
   name: material
   language: en
