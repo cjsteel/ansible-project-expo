@@ -2,10 +2,14 @@ site_name: Ansible Expo
 site_author: Christopher Steel
 nav:
     - Home: index.md
-    - Setup:
-       - Controller: 
-         - venv: venv/installing-ansible-into-a-virtual-python-3-environment.md
-         - sshkeys : sshkeys
+    - Development:
+       - Overview: development/index.md
+       - configuration: development/configuring-an-expo-development-system.md
+       - ansible: development/ansible-project-setup.md
+       - project development: development/project-development.md
+    - Controller: 
+       - venv: venv/installing-ansible-into-a-virtual-python-3-environment.md
+       - sshkeys : sshkeys
     - Usage:
        - Maintenance Commnads: maintenance-command-examples.md
        - Adding New Systems:
@@ -31,7 +35,8 @@ theme:
   name: material
   language: en
   features:
-    - tabs
+    - navigation.instant
+    - navigation.tabs
   palette:
     primary: indigo
     accent: deep purple

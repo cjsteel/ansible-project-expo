@@ -1,5 +1,4 @@
-# Welcome Ansible Expo
-
+# Ansible Expo
 
 ## Commands
 
@@ -15,8 +14,8 @@
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-```shell
-this is a shell
-```
+## Setting up a development platform
 
-## Another heading
+* [Development](development/index.md)
+
+
