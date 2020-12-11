@@ -11,22 +11,21 @@ nav:
        - Controller Overview: controller/index.md
     - Usage:
        - Usage Overview: usage/index.md
-       - Maintenance Commands and Procedures: maintenance-commands-and-procedures.md
+       - Maintenance Commands and Procedures: usage/maintenance-commands-and-procedures.md
        - Adding New Systems:
            - System preparations: 
                - BIOS/(U)EFI Settings:
-                   - Wake-on-LAN (Wol): bios/enabling-wol.md
-                   - Network booting: bios/enabling-pxe.md
+                   - Wake-on-LAN (Wol): usage/enabling-wol.md
+                   - Network booting: usage/enabling-pxe.md
                - Hardware:
                    - Mirrored boot: mdadm/index.md
                    - Drive locations: chassis/index.md
                - DNS:
                    - DNS: dns/index.md
-                   - /etc/hosts file: etc_hosts/index.md
+                   - /etc/hosts file: usage/hosts.md
            - Connectivity:
-               - Connectivity test: ssh/testing-connectivity.md
                - ssh agent: ssh/sshagent.md
-               - ssh-add: ssh/sshadd.md 
+               - ssh-add: ssh/sshadd.md
            - inventory/production/hosts:
                - Research Workstation Iventory Example: usage/workstation-inventory-example.md 
                - Storage Server Inventory Example: usage/server-inventory-example.md
