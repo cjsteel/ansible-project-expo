@@ -8,6 +8,7 @@ nav:
        - ansible: development/ansible-project-setup.md
        - project development: development/project-development.md
     - Controller: 
+       - Overview: controller/index.md
        - venv: venv/installing-ansible-into-a-virtual-python-3-environment.md
        - sshkeys : sshkeys
     - Usage:
