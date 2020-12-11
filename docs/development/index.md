@@ -6,4 +6,8 @@
 
 ## [Developing with Expo](project-development.md)
 
+## Documentation
+
+* [Deploying technical documentation to github using mkdocs](deploying-technical-documentation-to-github-using-mkdocs.md)
+
 

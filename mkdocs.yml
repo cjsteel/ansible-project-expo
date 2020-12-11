@@ -10,8 +10,8 @@ nav:
     - Controller: 
        - Controller Overview: controller/index.md
     - Usage:
-       - Usage Overview: usage: index.md
-       - Maintenance Commnads: maintenance-command-examples.md
+       - Usage Overview: usage/index.md
+       - Maintenance Commands and Procedures: maintenance-commands-and-procedures.md
        - Adding New Systems:
            - System preparations: 
                - BIOS/(U)EFI Settings:
@@ -28,9 +28,10 @@ nav:
                - ssh agent: ssh/sshagent.md
                - ssh-add: ssh/sshadd.md 
            - inventory/production/hosts:
-               - Research Workstation example: inventory/workstation-example.md 
-               - Storage Server example: inventory/server-example.yml
-
+               - Research Workstation Iventory Example: usage/workstation-inventory-example.md 
+               - Storage Server Inventory Example: usage/server-inventory-example.md
+               - Custom Configurations: usage/custom-configurations.md
+           - Applying the Base Configuration: usage/applying-the-base-configuration.md
 theme:
   name: material
   language: en
