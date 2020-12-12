@@ -1,0 +1,66 @@
+---
+# [](https://galaxy.ansible.com/docs/using/installing.html)
+
+#Each role in the file will have one or more of the following attributes:
+#
+#    src
+#        The source of the role, and a required attribute. Specify a role from Galaxy by using the format namespace.role_name, or provide a URL to a repository within a git based SCM.
+#    scm
+#        If the src is a URL, specify the SCM. Only git or hg are supported. Defaults to git.
+#    version:
+#        The version of the role to download. Provide a tag value, commit hash, or branch name. Defaults to master.
+#    name:
+#        Download the role to a specific name. Defaults to the Galaxy name when downloading from Galaxy, or the name of the repository, when src is a URL.
+
+
+# from galaxy
+- src: robertdebock.bootstrap
+  version: 3.0.1
+- src: robertdebock.core_dependencies
+  version: 1.3.5
+- src: robertdebock.buildtools
+  version: 2.3.4
+#- src: robertdebock.ca_certificates
+#- src: robertdebock.certbot
+#- src: robertdebock.cron
+#- src: robertdebock.digitalocean_agent
+- src: robertdebock.epel
+  version: 2.4.5
+
+#- src: robertdebock.fail2ban
+#- src: robertdebock.firewall
+#- src: robertdebock.httpd
+#- src: robertdebock.openssl
+#- src: robertdebock.python_pip
+#- src: robertdebock.selinux
+#- src: robertdebock.update
+
+# from GitHub # latest
+#- src: https://github.com/bennojoy/nginx
+
+# from GitHub overriding the name and specifying a specific tag
+#- src: https://github.com/bennojoy/nginx
+#  version: master
+#  name: nginx_role
+
+# from a webserver, where the role is packaged in a tar.gz
+#- src: https://some.webserver.example.com/files/master.tar.gz
+#  name: http-role
+
+# from Bitbucket
+#- src: git+http://bitbucket.org/willthames/git-ansible-galaxy
+#  version: v1.4
+
+# from Bitbucket, alternative syntax and caveats
+#- src: http://bitbucket.org/willthames/hg-ansible-galaxy
+#  scm: hg
+
+# from GitLab or other git-based scm
+#- src: git@gitlab.company.com:mygroup/ansible-base.git
+#  scm: git
+#  version: "0.1"  # quoted, so YAML doesn't parse this as a floating-point value
+
+# Includes
+# from galaxy
+# - src: yatesr.timezone
+# - include: <path_to_requirements>/webserver.yml
